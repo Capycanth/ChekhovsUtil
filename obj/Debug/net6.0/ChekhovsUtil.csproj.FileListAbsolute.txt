@@ -1,0 +1,12 @@
+C:\OiCornwall\GameDev\ChekhovsUtil\obj\Debug\net6.0\ChekhovsUtil.csproj.AssemblyReference.cache
+C:\OiCornwall\GameDev\ChekhovsUtil\obj\Debug\net6.0\ChekhovsUtil.GeneratedMSBuildEditorConfig.editorconfig
+C:\OiCornwall\GameDev\ChekhovsUtil\obj\Debug\net6.0\ChekhovsUtil.AssemblyInfoInputs.cache
+C:\OiCornwall\GameDev\ChekhovsUtil\obj\Debug\net6.0\ChekhovsUtil.AssemblyInfo.cs
+C:\OiCornwall\GameDev\ChekhovsUtil\obj\Debug\net6.0\ChekhovsUtil.csproj.CoreCompileInputs.cache
+C:\OiCornwall\GameDev\ChekhovsUtil\bin\Debug\net6.0\ChekhovsUtil.deps.json
+C:\OiCornwall\GameDev\ChekhovsUtil\bin\Debug\net6.0\ChekhovsUtil.dll
+C:\OiCornwall\GameDev\ChekhovsUtil\bin\Debug\net6.0\ChekhovsUtil.pdb
+C:\OiCornwall\GameDev\ChekhovsUtil\obj\Debug\net6.0\ChekhovsUtil.dll
+C:\OiCornwall\GameDev\ChekhovsUtil\obj\Debug\net6.0\refint\ChekhovsUtil.dll
+C:\OiCornwall\GameDev\ChekhovsUtil\obj\Debug\net6.0\ChekhovsUtil.pdb
+C:\OiCornwall\GameDev\ChekhovsUtil\obj\Debug\net6.0\ref\ChekhovsUtil.dll
