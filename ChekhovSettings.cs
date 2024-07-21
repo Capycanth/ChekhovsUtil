@@ -6,7 +6,7 @@ namespace ChekhovsUtil
     public class ChekhovSettings
     {
         private static ChekhovSettings? _settings;
-        private static readonly Logger _logger = new Logger(typeof(ChekhovSettings));
+        private static Logger? _logger;
 
         [NotNull]
         public string GameName { get; private set; }
@@ -16,13 +16,17 @@ namespace ChekhovsUtil
             GameName = gameName;
         }
 
-        public static ChekhovSettings Initialize(string gameName)
+        public static void Initialize(string gameName)
         {
-            CreateDirectoryIfNonExistent(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), gameName));
-            CreateDirectoryIfNonExistent(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), gameName, "Data"));
-            CreateDirectoryIfNonExistent(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), gameName, "Log"));
+            var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            CreateDirectoryIfNonExistent(Path.Combine(appDataPath, gameName));
+            CreateDirectoryIfNonExistent(Path.Combine(appDataPath, gameName, "Data"));
+            CreateDirectoryIfNonExistent(Path.Combine(appDataPath, gameName, "Log"));
 
-            return _settings ??= new ChekhovSettings(gameName);
+            _settings ??= new ChekhovSettings(gameName);
+
+            // Logger must be intialized after _settings
+            _logger = new Logger(typeof(ChekhovSettings));
         }
 
         public static ChekhovSettings Settings
