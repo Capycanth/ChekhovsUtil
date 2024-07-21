@@ -15,7 +15,7 @@ namespace ChekhovsUtil.log
         {
             string currentTime = DateTime.Now.ToString("MM-dd-yy_HH:mm:ss.ffff");
 
-            File.AppendAllText(SaveDirectory, $"{currentTime} : {message}");
+            File.AppendAllText(SaveDirectory, $"{currentTime} : {message}\n");
         }
 
         public void Error(string message)
@@ -30,7 +30,7 @@ namespace ChekhovsUtil.log
 
         private static string NullSafeClassName(Type clazz)
         {
-            return TypeDescriptor.GetClassName(clazz) ?? "garbage";
+            return clazz.Name ?? "garbage";
         }
     }
 }
